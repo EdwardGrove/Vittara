@@ -1,0 +1,119 @@
+:root{
+    --cinza: rgb(114, 111, 111);
+    --branco: rgb(226, 220, 220);
+    --azul: rgb(2, 115, 245);
+    --marron:rgb(49, 0, 0);
+}
+
+body, ul{
+   margin: 0;
+   padding: 0;
+}
+body{
+    height: 100px; 
+    color: var(--marron);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+   
+}
+.fundo{
+    background-image: url('../img/imagem_fundo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 600px;
+}
+.fundo2{
+    background-image: url('../img/imagem_fundo2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 600px;
+    padding-bottom: 600px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+    background-image: linear-gradient(rgba(165, 163, 163, 0.089), rgba(0, 0, 0, 0.726));
+    background-repeat: no-repeat;
+}
+.logo{
+    margin-left: 3%;
+    color: var(--marron);
+    text-decoration: none;
+    font-size: 32px;
+    animation-name: efeito; 
+    animation-duration: 2s;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+
+}
+.item{
+   display: inline;
+    
+}
+.link{
+   text-decoration: none;
+   margin-right: 6px;
+   color: var(--marron);
+   font-size: 20px;
+   font-weight: bolder;
+}
+.link:hover{
+    color: var(--cinza);
+}
+.linha{
+    border: 1px solid var(--cinza);
+    
+}
+.card{
+
+    min-width: 35%;
+    height: 80vh;
+    padding: 32px;
+    background-color: var(--cinza);
+    opacity: 0.7;
+    align-content: center;
+   
+   
+}
+p{
+    font-size: 60px;
+    animation-name: efeito2;
+    animation-duration: 2s;
+}
+.footer{
+  background-color: var(--marron);
+  color: var(--branco);
+  bottom: 0;
+  padding: 28px;
+}
+.justify{
+    display: flex;
+    justify-content: center;
+}
+.border{
+   
+    border-radius: 5px 5px ;
+    box-shadow: inset 1em 5em gold;
+}
+.txt_shadow{
+    text-shadow: 2px 3px 0 0 gray;
+}
+
+@keyframes efeito{
+    from {font-size: 22px;}
+    to {font-size: 32px;}
+    }
+  
+    @keyframes efeito2{
+        from {font-size: 32px;}
+        to {font-size: 60px;}
+        }
+  img{
+    width: 100%;
+  }      
+
