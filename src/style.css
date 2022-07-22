@@ -3,6 +3,29 @@
     --branco: rgb(226, 220, 220);
     --azul: rgb(2, 115, 245);
     --marron:rgb(49, 0, 0);
+    /*Grupo de azuis*/
+    /*AZUL ESCURO*/
+    --azul01: #d7e3f4;
+    --azul02: #afc6e9;
+    --azul03: #87aade;
+    --azul04: #5f8dd3;
+    --azul05: #3771c8;
+    --azul06: #2c5aa0;
+    --azul07: #214478;
+    --azul08: #162d50;
+    --azul09: #0b1728;
+    /*AZUL CLARO*/
+    --azul10: #80b3ff;
+    --azul11: #80b3ff;
+    --azul12: #5599ff;
+    --azul13: #2a7fff;
+    --azul14: #0066ff;
+    --azul15: #0055d4;
+    --azul16: #0044aa;
+    --azul17: #003380;
+    --azul18: #002255;
+    --azul19: #00112b;
+
 }
 
 body, ul{
@@ -11,7 +34,7 @@ body, ul{
 }
 body{
     height: 100px; 
-    color: var(--marron);
+    color: var(--azul01);
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
    
@@ -34,14 +57,13 @@ body{
     display: flex;
     justify-content: space-between;
     right: 0;
-    background-image: linear-gradient(rgba(165, 163, 163, 0.089), rgba(0, 0, 0, 0.726));
-    background-repeat: no-repeat;
+    background-color: var(--azul02);
 }
 .logo{
     margin-left: 3%;
-    color: var(--marron);
+    color: var(--azul05);
     text-decoration: none;
-    font-size: 32px;
+    font-size: 30px;
     animation-name: efeito; 
     animation-duration: 2s;
 }
@@ -58,35 +80,33 @@ body{
 .link{
    text-decoration: none;
    margin-right: 6px;
-   color: var(--marron);
+   color: var(--azul05);
    font-size: 20px;
    font-weight: bolder;
 }
 .link:hover{
-    color: var(--cinza);
+    color: var(--azul06);
 }
 .linha{
-    border: 1px solid var(--cinza);
+    border: 1px solid var(--azul03);
     
 }
 .card{
 
-    min-width: 35%;
-    height: 80vh;
-    padding: 32px;
-    background-color: var(--cinza);
+    min-width: 35px;
+    padding: 7%;
+    background-color: var(--azul05);
     opacity: 0.7;
     align-content: center;
-   
+    animation-name: efeito2;
+    animation-duration: 3s;
    
 }
 p{
-    font-size: 60px;
-    animation-name: efeito2;
-    animation-duration: 2s;
+    font-size: 30px;
 }
 .footer{
-  background-color: var(--marron);
+  background-color: var(--azul08);
   color: var(--branco);
   bottom: 0;
   padding: 28px;
@@ -98,20 +118,20 @@ p{
 .border{
    
     border-radius: 5px 5px ;
-    box-shadow: inset 1em 5em gold;
+    box-shadow: inset 1em 5em var(--azul07);
 }
 .txt_shadow{
-    text-shadow: 2px 3px 0 0 gray;
+    text-shadow: 2px 3px 0 0 var(--azul09);
 }
 
 @keyframes efeito{
     from {font-size: 22px;}
-    to {font-size: 32px;}
+    to {font-size: 30px;}
     }
   
     @keyframes efeito2{
-        from {font-size: 32px;}
-        to {font-size: 60px;}
+        from {box-shadow: inset 5em 1em var(--azul07)}
+        to {box-shadow: inset 1em 5em var(--azul07)}
         }
   img{
     width: 100%;
